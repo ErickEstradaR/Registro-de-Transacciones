@@ -1,0 +1,1 @@
+Transaccion BanReservas {Moneda=1 numCuenta=1 numCuentaBeneficiario= 1 cantidad= 11.0 concepto=1}

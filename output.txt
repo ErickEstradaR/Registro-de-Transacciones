@@ -1,0 +1,1 @@
+BancoPopular{TipoRegistro=1IDcompania=1NombreEmpresa1Secuencia1Secuencia Trans1Cuenta destino1Tipo cuenta destinonullMonedaDestino11CodBancoDestino1MontoTransaccion1.0Nombrebeneficiario1}

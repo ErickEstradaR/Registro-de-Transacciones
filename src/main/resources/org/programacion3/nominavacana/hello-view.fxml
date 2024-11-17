@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="709.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.programacion3.nominavacana.HelloController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="499.0" prefWidth="161.0" style="-fx-background-image: #0384fc;">
+         <children>
+            <Label layoutX="69.0" layoutY="29.0" text="Bienvenido!" />
+            <Label layoutX="91.0" layoutY="46.0" text="Usuario" />
+            <Button fx:id="addBtn" layoutX="10.0" layoutY="191.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="28.0" prefWidth="128.0" text="Registrar Transaccion">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
+            <ImageView fitHeight="53.0" fitWidth="83.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@80fbd180c9d1d625d19d6aaa30627d7e.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inicio" layoutX="25.0" layoutY="136.0" mnemonicParsing="false" onAction="#inicioOnAction" prefHeight="26.0" prefWidth="104.0" text="Inicio" />
+            <Label layoutX="20.0" layoutY="454.0" prefHeight="17.0" prefWidth="89.0" text="Version:DEMO" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="InicioAnchorPane" layoutX="137.0" layoutY="2.0" prefHeight="491.0" prefWidth="562.0" style="-fx-background-color: #FFFFFF;" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="63.0" text="Bienvenido al Sistema de gestion de nominas " />
+            <Label layoutX="146.0" layoutY="35.0" text="Estrada Solutions">
+               <effect>
+
+               </effect>
+               <font>
+                  <Font name="Andale Mono" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="205.0" fitWidth="232.0" layoutX="14.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@149434782_5021622537910696_3576899583774336799_n.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="221.0" layoutX="225.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@460481379_915775107251502_5845604943662586468_n.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="174.0" fitWidth="469.0" layoutX="6.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@184641841_1738562412995473_8071055566328650241_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anadirAnchorPane" layoutX="134.0" layoutY="-2.0" prefHeight="499.0" prefWidth="481.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="47.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unnamed.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="188.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@banreservas.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="133.0" layoutX="294.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@populaar.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="bhdCB" layoutX="79.0" layoutY="126.0" mnemonicParsing="false" />
+            <CheckBox fx:id="banreservasCB" layoutX="206.0" layoutY="126.0" mnemonicParsing="false" />
+            <CheckBox fx:id="popularCB" layoutX="351.0" layoutY="126.0" mnemonicParsing="false" />
+            <Label layoutX="47.0" layoutY="31.0" text="* Selecciona un banco" />
+            <GridPane fx:id="guardarGP" layoutX="47.0" layoutY="181.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="popularGP" layoutX="28.0" layoutY="180.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.22073364257812" minWidth="10.0" prefWidth="87.71743774414062" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.72738647460938" minWidth="10.0" prefWidth="111.99334716796875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.00665283203125" minWidth="10.0" prefWidth="101.00665283203125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="31.889633178710938" minHeight="10.0" prefHeight="31.889633178710938" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="29.05517578125" minHeight="10.0" prefHeight="28.110366821289062" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Tipo Registro" />
+                  <Label text="ID Empresa" GridPane.rowIndex="1" />
+                  <Label text="Moneda Destino" GridPane.rowIndex="6" />
+                  <Label text="Nombre empresa" GridPane.rowIndex="2" />
+                  <Label text="Secuencia" GridPane.rowIndex="3" />
+                  <Label text="Secuencia Trans" GridPane.rowIndex="4" />
+                  <Label text="Cuenta Destino" GridPane.rowIndex="5" />
+                  <Label text="Cod Banco destino" GridPane.columnIndex="2" />
+                  <Label text="Monto Transaccion" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Nombre Beneficiario" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="Cuenta Beneficiario" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="tiporegistroTF" GridPane.columnIndex="1" />
+                  <TextField fx:id="idempresaTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="nombreempresaTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="secuenciaTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="secuenciatransTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="cuentaDestinoTF" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="monedaDestinoTF" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="codBancoDestinoTF" GridPane.columnIndex="3" />
+                  <TextField fx:id="montotransacTF" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="nombreBeneficiarioTF" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="cuentaBeneficiarioTF" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Button fx:id="guardarPPBTN" layoutX="61.0" layoutY="416.0" mnemonicParsing="false" onAction="#guardarTransaccionPopular" prefHeight="26.0" prefWidth="141.0" text="Guardar Transaccion " visible="false" />
+            <GridPane fx:id="bhdGP" layoutX="33.0" layoutY="197.0" prefHeight="152.0" prefWidth="297.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.97137451171875" minWidth="10.0" prefWidth="137.21743774414062" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.22076416015625" minWidth="10.0" prefWidth="63.282562255859375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Cuenta del Empleado" />
+                  <Label text="Nombre del empleado" GridPane.rowIndex="1" />
+                  <Label text="Referencia" GridPane.rowIndex="2" />
+                  <Label text="Monto del pago" GridPane.rowIndex="3" />
+                  <Label text="Concepto" GridPane.rowIndex="4" />
+                  <TextField fx:id="cuentaTF" GridPane.columnIndex="1" />
+                  <TextField fx:id="nombrebhdTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="refTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="montobhdTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="conceptobhdTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Button fx:id="guardarBHDBtn" layoutX="61.0" layoutY="403.0" mnemonicParsing="false" onAction="#guardarTransaccionBHD" text="Guardar Transaccion " visible="false" />
+            <GridPane fx:id="reservasGP" layoutX="57.0" layoutY="207.0" prefHeight="139.0" prefWidth="261.0" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="divisaTF" GridPane.columnIndex="1" />
+                  <TextField fx:id="numreservasTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="numbeneficiariobanreservasTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="pagobanreservasTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="conceptoreservasTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Moneda" />
+                  <Label text="Numero de Cuenta" GridPane.rowIndex="1" />
+                  <Label text="Num Cuenta Beneficiario" GridPane.rowIndex="2" />
+                  <Label text="Pago a realizar" GridPane.rowIndex="3" />
+                  <Label text="Concepto" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Button fx:id="guardarbanreservasBTN" layoutX="43.0" layoutY="402.0" mnemonicParsing="false" onAction="#guardarTransaccionBanreservas" text="Guardar Transaccion" visible="false" />
+            <Label fx:id="infoLB" layoutX="97.0" layoutY="224.0" text="Cuando selecciones un banco, los datos apareceran aqui..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
